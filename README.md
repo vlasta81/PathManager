@@ -1,14 +1,14 @@
-﻿# Pathman
+﻿# PathManager
 
 
-Pathman is a CLI tool managing the windows "Path" environment variable.
+PathManager is a CLI tool for managing Windows "Path" environment variable.
 
 
 #### USING
 ### Commands
 
     Usage:
-      Pathman [command] [options]
+      PathManager [command] [options]
 
     Options:
       --version       Show version information
@@ -24,7 +24,7 @@ Pathman is a CLI tool managing the windows "Path" environment variable.
       Add path to environment variable.
 
     Usage:
-      Pathman add [options]
+      PathManager add [options]
 
     Options:
       -d, --directory <path> (REQUIRED)  The directory path that is added to the "Path" environment variable.
@@ -41,7 +41,7 @@ Pathman is a CLI tool managing the windows "Path" environment variable.
       Remove path from environment variable.
 
     Usage:
-      Pathman remove [options]
+      PathManager remove [options]
 
     Options:
       -d, --directory <path> (REQUIRED)  The directory path that is added to the "Path" environment variable.
@@ -53,13 +53,15 @@ Pathman is a CLI tool managing the windows "Path" environment variable.
 
 #### EXAMPLES
 
-    Pathman add "C:\Path\To Directory" --system
-    Pathman add "C:\Path\To Directory" --system --first
-    Pathman add C:\Path\To\Directory
-    Pathman add "C:\Path\To Directory" -f
-    Pathman add C:\Path\To\Directory --first
-    Pathman remove "C:\Path\To Directory" -s
-    Pathman remove C:\Path\To\Directory
-    Pathman -?
-    Pathman -h
-    Pathman -help
+    PathManager add "C:\Path\To Directory" --system
+    PathManager add "C:\Path\To Directory" --system --first
+    PathManager add C:\Path\To\Directory
+    PathManager add "C:\Path\To Directory" -f
+    PathManager add C:\Path\To\Directory --first
+    PathManager remove "C:\Path\To Directory" -s
+    PathManager remove C:\Path\To\Directory
+    PathManager -?
+    PathManager -h
+    PathManager -help
+    PathManager add -h
+    PathManager remove --help
